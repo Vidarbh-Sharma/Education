@@ -1,0 +1,247 @@
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about-header {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.about-header h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Company Story */
+.company-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin: 4rem 0;
+    padding: 2rem 0;
+}
+
+.story-content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.story-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+}
+
+/* Mission & Vision */
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.mission-card,
+.vision-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 5px solid #667eea;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mission-card h3,
+.vision-card h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.mission-card p,
+.vision-card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Core Values */
+.core-values {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.core-values h2 {
+    margin-bottom: 2rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(102, 126, 234, 0.2);
+}
+
+.value-icon {
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.value-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.value-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Team Section */
+.team-section {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.team-section h2 {
+    margin-bottom: 0.5rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(102, 126, 234, 0.3);
+}
+
+.team-avatar {
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+
+.team-card h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+}
+
+.team-card p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Partnership Section */
+.partnership-section {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.partnership-section h2 {
+    margin-bottom: 2rem;
+}
+
+.partnership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.partnership-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.item-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.partnership-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.partnership-item p {
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 32px;
+    }
+
+    .company-story,
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid,
+    .team-grid,
+    .partnership-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-placeholder {
+        height: 300px;
+        font-size: 100px;
+    }
+}
