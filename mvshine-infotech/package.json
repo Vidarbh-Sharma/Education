@@ -7,7 +7,6 @@
     "dev": "vite",
     "build": "vite build",
     "postbuild": "node ./scripts/removeDistVercelJson.cjs",
-    "vercel-build": "vite build && echo '--- dist listing ---' && ls -la dist || true && echo '--- dist/vercel.json ---' && if [ -f dist/vercel.json ]; then cat dist/vercel.json; else echo 'no dist/vercel.json'; fi",
     "lint": "eslint .",
     "preview": "vite preview"
   },
